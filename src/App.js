@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Cell from './Cell';
+import Board from './Board';
 
 function App() {
-  return <Cell />;
+  return <Board />;
 }
 
 export default App;
