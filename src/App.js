@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Cell from './Cell';
 
 function App() {
-  return <h1>hello react</h1>;
+  return <Cell />;
 }
 
 export default App;
