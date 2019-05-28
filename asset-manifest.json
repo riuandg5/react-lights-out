@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-lights-out/static/css/main.cfda8877.chunk.css",
-    "main.js": "/react-lights-out/static/js/main.07e91475.chunk.js",
-    "main.js.map": "/react-lights-out/static/js/main.07e91475.chunk.js.map",
+    "main.css": "/react-lights-out/static/css/main.c1b7126c.chunk.css",
+    "main.js": "/react-lights-out/static/js/main.3de58cb7.chunk.js",
+    "main.js.map": "/react-lights-out/static/js/main.3de58cb7.chunk.js.map",
     "runtime~main.js": "/react-lights-out/static/js/runtime~main.27dd0fd8.js",
     "runtime~main.js.map": "/react-lights-out/static/js/runtime~main.27dd0fd8.js.map",
     "static/js/2.26ba37d3.chunk.js": "/react-lights-out/static/js/2.26ba37d3.chunk.js",
     "static/js/2.26ba37d3.chunk.js.map": "/react-lights-out/static/js/2.26ba37d3.chunk.js.map",
     "index.html": "/react-lights-out/index.html",
-    "precache-manifest.a8833e201e5a7a816ff693e0c4ef83fd.js": "/react-lights-out/precache-manifest.a8833e201e5a7a816ff693e0c4ef83fd.js",
+    "precache-manifest.96b729fbaf8cf3d52987bf2746b29ca6.js": "/react-lights-out/precache-manifest.96b729fbaf8cf3d52987bf2746b29ca6.js",
     "service-worker.js": "/react-lights-out/service-worker.js",
-    "static/css/main.cfda8877.chunk.css.map": "/react-lights-out/static/css/main.cfda8877.chunk.css.map"
+    "static/css/main.c1b7126c.chunk.css.map": "/react-lights-out/static/css/main.c1b7126c.chunk.css.map"
   }
 }
