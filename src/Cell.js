@@ -1,20 +1,13 @@
 import React from 'react';
+import './Cell.css';
 
 function Cell(props) {
   function handleClick(e) {
     e.preventDefault();
     props.flipCellsAround();
   }
-  return (
-    <td
-      style={{
-        width: '100px',
-        height: '100px',
-        background: props.isLit ? 'blue' : 'black'
-      }}
-      onClick={handleClick}
-    />
-  );
+  let classes = 'Cell' + (props.isLit ? ' Cell-lit' : '');
+  return <td className={classes} onClick={handleClick} />;
 }
 
 export default Cell;

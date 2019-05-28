@@ -3,7 +3,11 @@ import './App.css';
 import Board from './Board';
 
 function App() {
-  return <Board />;
+  return (
+    <div className="App">
+      <Board />
+    </div>
+  );
 }
 
 export default App;
