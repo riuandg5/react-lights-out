@@ -5,12 +5,13 @@ class Board extends Component {
   static defaultProps = {
     nrows: 5,
     ncols: 5,
-    chanceLightStartsOn: 0.25
+    chanceLightStartsOn: 1
   };
   constructor(props) {
     super(props);
     this.state = {
-      board: this.createBoard()
+      board: this.createBoard(),
+      hasWon: false
     };
   }
   createBoard() {
@@ -38,9 +39,13 @@ class Board extends Component {
     flipCell(y, x + 1);
     flipCell(y - 1, x);
     flipCell(y + 1, x);
-    this.setState({ board });
+    let hasWon = board.every(row => row.every(cell => !cell));
+    this.setState({ board, hasWon });
   }
   render() {
+    if (this.state.hasWon) {
+      return <div>YOU WIN!</div>;
+    }
     let tBoard = [];
     for (let y = 0; y < this.props.nrows; y++) {
       let row = [];
@@ -57,9 +62,12 @@ class Board extends Component {
       tBoard.push(<tr key={y}>{row}</tr>);
     }
     return (
-      <table>
-        <tbody>{tBoard}</tbody>
-      </table>
+      <div>
+        <div>Lights Out</div>
+        <table>
+          <tbody>{tBoard}</tbody>
+        </table>
+      </div>
     );
   }
 }
